@@ -3,11 +3,11 @@
 #include <stdio.h>
 
 /**
- *main - Point of Entry
+ *main - Entry point
  *
- *Description: Prints if n is + . - or 0
+ *Description: Prints out if random number is positive, negative or zero
  *
- *Return: 0
+ *Return: Returns 0 upon success.
  */
 
 int main(void)
@@ -18,10 +18,11 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 
 	if (n < 0)
-		printf("is negative");
+		printf("%d is negative",n);
 	else if (n == 0)
-		printf("is zero");
+		printf("%d is zero",n);
 	else
-		printf("is positive");
+		printf("%d is positive",n);
+
 	return (0);
 }
