@@ -21,8 +21,8 @@ int main(void)
 
 		if (n != 99)
 		{
-			putchar(',')
-			putchar(' ')
+			putchar(',');
+			putchar(' ');
 		}
 		n++
 	}
