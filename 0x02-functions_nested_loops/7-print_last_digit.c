@@ -3,24 +3,24 @@
 /**
  * print_last_digit - grabs last digit of number
  *
- * @ld: holds number to grab last digit from
+ * @n: holds number to grab last digit from
  *
  * Return: ld.
  */
 
-int print_last_digit(int ld)
+int print_last_digit(int n)
 {
-	if (ld < 0)
+	if (n < 0)
 	{
-		ld = (ld * -1);
-		ld = (ld % 10);
-		_putchar('0' + ld);
-		return (ld);
+		n = (n % 10) * -1;
+		
+		_putchar('0' + n);
+		return (n);
 	}
-	else
+	else 
 	{
-		ld = (ld % 10);
-		_putchar('0' + ld);
-		return (ld);
+		n = n % 10;
+		_putchar('0' + n);
+		return (n);
 	}
 }
