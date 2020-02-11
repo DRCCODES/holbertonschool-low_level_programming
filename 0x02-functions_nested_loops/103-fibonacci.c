@@ -9,27 +9,23 @@
 int main(void)
 {
 
-	int i;
+	long i = 1;
 
-	int n;
+	long n = 2;
 
-	int t1 = 1;
+	long nextTerm;
 
-	int t2 = 2;
+	long even = 0;
 
-	int nextTerm;
-
-	int even = 0;
-
-	while (t1 < 4000000 && t2 < 4000000)
+	while (i < 4000000 && n < 4000000)
 	{
-	if ((t2 % 2) == 0)
-		even += t2;
-	nextTerm = t1 + t2;
-	t1 = t2;
-	t2 = nextTerm;
+	if ((n % 2) == 0)
+		even += n;
+	nextTerm = i + n;
+	i = n;
+	n = nextTerm;
 	}
-	printf("%d\n", even);
+	printf("%ld\n", even);
 
 	return (0);
 }
