@@ -1,4 +1,4 @@
-
+#include <stdio.h>
 #include "holberton.h"
 /**
  * print_to_98 - add or subtract until number (n) reaches 98
@@ -15,16 +15,20 @@ void print_to_98(int n)
 	{
 		if (n > 98)
 		{
-			printf("%", n);
+			printf("%d", n);
 			printf(", ");
 			n--;
 		}
 		else
 		{
-			printf("%", n);
+			printf("%d", n);
 			printf(", ");
 			n++;
-
-	}
+		}
+	
+	}		
 	printf("%d", n);
+	putchar('\n');
+	
+	
 }
