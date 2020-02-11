@@ -20,3 +20,4 @@ j = c;
 printf("%f, ", c);
 }
 return (0);
+}
