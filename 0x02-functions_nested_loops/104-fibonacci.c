@@ -11,6 +11,8 @@ double i;
 double j = 1;
 double k = 2;
 double c = 0;
+print("%f, ", j);
+print("%f, ", k);
 
 for (i = 0; i < 96; i++)
 {
