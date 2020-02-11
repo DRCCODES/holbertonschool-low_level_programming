@@ -17,9 +17,10 @@ printf("%f, ", k);
 for (i = 0; i < 96; i++)
 {
 c = (j + k);
-k = j;
-j = c;
+j = k;
+k = c;
 printf("%f, ", c);
 }
+printf("\n");
 return (0);
 }
