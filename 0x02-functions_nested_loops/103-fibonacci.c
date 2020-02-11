@@ -25,11 +25,11 @@ int main(void)
 	{
 	if ((t2 % 2) == 0)
 		even += t2;
-		nextTerm = t1 + t2;
-		t1 = t2;
-		t2 = nextTerm;
+	nextTerm = t1 + t2;
+	t1 = t2;
+	t2 = nextTerm;
 	}
-	printf("%ld ", even);
-	putchar('\n');
+	printf("%d\n", even);
+
 	return (0);
 }
