@@ -12,7 +12,7 @@ double j = 1;
 double k = 2;
 double c = 0;
 
-for (i = 0; i < 98; i++)
+for (i = 0; i < 96; i++)
 {
 c = (j + k);
 k = j;
