@@ -5,7 +5,7 @@
  *
  * @ld: holds number to grab last digit from
  *
- * Return: Always 0.
+ * Return: ld.
  */
 
 int print_last_digit(int ld)
@@ -14,4 +14,5 @@ int print_last_digit(int ld)
 		ld = (ld * (-1));
 
 	_putchar('0' + (ld % 10));
+	return (ld);
 }
