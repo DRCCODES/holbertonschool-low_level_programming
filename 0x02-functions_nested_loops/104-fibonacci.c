@@ -7,19 +7,18 @@
 
 int main(void)
 {
-double i;
-double j = 1;
-double k = 2;
-double c = 0;
-printf("%f, ", j);
-printf("%f, ", k);
-
+unsigned long int i;
+unsigned long int  j = 1;
+unsigned long int  k = 2;
+unsigned long int  c = 0;
+printf("%lu, ", j);
+printf("%lu, ", k);
 for (i = 0; i < 96; i++)
 {
 c = (j + k);
 j = k;
 k = c;
-printf("%f, ", c);
+printf("%lu, ", c);
 }
 printf("\n");
 return (0);
