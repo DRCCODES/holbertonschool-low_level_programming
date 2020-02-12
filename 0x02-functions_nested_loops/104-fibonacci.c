@@ -11,13 +11,16 @@ double i;
 double j = 1;
 double k = 2;
 double c = 0;
+printf("%f, ", j);
+printf("%f, ", k);
 
-for (i = 0; i < 98; i++)
+for (i = 0; i < 96; i++)
 {
 c = (j + k);
-k = j;
-j = c;
+j = k;
+k = c;
 printf("%f, ", c);
 }
+printf("\n");
 return (0);
 }
