@@ -27,7 +27,7 @@ printf("%lu, ", c);
 else
 printf("%lu", c);
 }
-putchar('\n')
+putchar('\n');
 
 return (0);
 }
