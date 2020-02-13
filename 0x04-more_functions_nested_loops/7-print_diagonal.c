@@ -3,6 +3,8 @@
 /**
  * print_diagonal - print \ n number of times
  *
+ * @n: number or \ printer and how far down
+ *
  * Return: Nothing
  */
 
