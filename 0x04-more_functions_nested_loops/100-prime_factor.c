@@ -2,7 +2,7 @@
 
 /**
   * main - Entry Point
-  &
+  *
   * Description: Finds largest prime factor by divison
   *
   * Return: 0
