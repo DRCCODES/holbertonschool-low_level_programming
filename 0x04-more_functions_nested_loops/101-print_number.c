@@ -7,6 +7,7 @@
  *
  * Return: Void does not return
  */
+
 void print_number(int num)
 {
 	int n;

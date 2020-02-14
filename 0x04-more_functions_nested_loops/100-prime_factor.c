@@ -8,7 +8,7 @@
   * Return: 0
   */
 
-int main(void)
+void print_number(void)
 {
 	long int d, n, lp;
 
