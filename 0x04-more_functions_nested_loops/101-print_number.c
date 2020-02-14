@@ -10,7 +10,7 @@
 
 void print_number(int num)
 {
-	int n;
+	unsigned int n;
 	int z = 1;
 	int d;
 
