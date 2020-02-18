@@ -9,7 +9,7 @@
  */
 int _atoi(char *s)
 {
-int res = 0;
+unsigned int res = 0;
 int sign = 1;
 int i = 0;
 int pos = 0;
