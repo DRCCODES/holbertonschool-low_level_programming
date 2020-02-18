@@ -2,9 +2,9 @@
 
 /**
  * reset_to_98 - call by reference
- * 
+ *
  * @n : the value to made to call a reference to 98
- * 
+ *
  * Return: Always 0.
  */
 
