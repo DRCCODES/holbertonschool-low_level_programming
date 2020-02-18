@@ -3,7 +3,7 @@
 /**
  * _atoi - converts str to int
  *
- * @s: the srt
+ * @s: the str
  *
  * Return: Always 0.
  */
@@ -15,19 +15,19 @@ int i = 0;
 int pos = 0;
 int neg = 0;
 
-for (i = 0; str[i] != '\0'; ++i)
-if (str[i] == '-')
+for (i = 0; s[i] != '\0'; ++i)
+if (s[i] == '-')
 {
 neg++;
 }
-else if (str[i] == '+')
+else if (s[i] == '+')
 {
 pos++;
 }
-else if (str[i] >= '0' && str[i] <= '9')
+else if (s[i] >= '0' && s[i] <= '9')
 {
-res = res * 10 +  str[i] - '0';
-if (str[i + 1] < '0' || str[i + 1] > '9')
+res = res * 10 +  s[i] - '0';
+if (s[i + 1] < '0' || s[i + 1] > '9')
 {
 break;
 }
