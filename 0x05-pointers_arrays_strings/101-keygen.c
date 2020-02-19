@@ -14,7 +14,6 @@ int main(void)
 	int c = 0;
 	int sum;
 	int i = 0;
-	int roof = 126;
 
 	while (sum < 2646)
 	{
