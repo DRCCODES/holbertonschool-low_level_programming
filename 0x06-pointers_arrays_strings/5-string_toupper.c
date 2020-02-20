@@ -12,15 +12,13 @@
 char *string_toupper(char *str)
 {
 
-int i;
-
-while (str[i] != '\0')
+while (*str != '\0')
 {
-if (str[i] >= 'a' && str[i] <= 'z')
+if (*str >= 'a' && *str <= 'z')
 {
-str[i] -= 32;
+*str -= 32;
 }
-i++;
+str++;
 }
 return (str);
 }
