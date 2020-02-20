@@ -16,7 +16,7 @@ int i;
 
 while (str[i] != '\0')
 {
-if (str[i] > 96 && str[i] < 123)
+if (str[i] >= 'a' && str[i] <= 'z')
 {
 str[i] -= 32;
 }
