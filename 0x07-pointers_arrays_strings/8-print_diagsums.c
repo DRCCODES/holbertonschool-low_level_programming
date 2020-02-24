@@ -11,8 +11,7 @@ void print_diagsums(int *a, int size)
 {
 int suma = 0;
 int sumb = 0;
-int i;
-i = 0;
+int i = 0;
 int h = 0;
 
 while (i < (size * size))
