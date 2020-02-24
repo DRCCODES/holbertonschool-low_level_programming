@@ -9,9 +9,8 @@
 
 char *_strchr(char *s, char c)
 {
-	unsigned int j;
+
 	char *k;
-	int count = 0;
 
 	while (*s)
 	{
