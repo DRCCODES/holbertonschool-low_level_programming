@@ -10,20 +10,18 @@
 char *_strchr(char *s, char c)
 {
 
-	char *k;
 
 	while (*s)
 	{
 	if (*s == c)
 	{
-	k = s;
-	return (k);
+	return (s);
 	}
 	s++;
 	}
 
 	if (*s == c)
-		return (k);
+		return (s);
 	else
 		return (NULL);
 }
