@@ -16,19 +16,17 @@ int main(int argc, char *argv[])
 int i;
 int sum = 0;
 
-if (argc < 2)
-{
-printf("%d\n", 0);
-return (1);
-}
 for (i = 1; i < argc; i++)
 {
-if (!check_D(argv[i]))
+if (check_D(argv[i]))
 {
-printf("Error\n");
-return (1);
+	sum += atoi(argv[i]);
 }
-sum += atoi(argv[i]);
+else
+{
+	printf("Error\n");
+	return (1);
+}
 }
 printf("%d\n", sum);
 return (0);
