@@ -13,7 +13,7 @@ int check_D(char *s);
 int main(int argc, char *argv[])
 {
 int i;
-long sum;
+int sum;
 
 if (argc < 2)
 {
