@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+
 int check_D(char *s);
 /**
  * main - add numbers if positive
@@ -13,7 +14,7 @@ int check_D(char *s);
 int main(int argc, char *argv[])
 {
 	int i;
-	long sum;
+	int sum = 0;
 
 	if (argc < 2)
 	{
