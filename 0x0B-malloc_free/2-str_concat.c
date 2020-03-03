@@ -16,8 +16,9 @@ int i;
 int j;
 int size = 0;
 int size2 = 0;
+char *empty = "";
 
-if (s1 == "" || s2 == "")
+if (s1 == empty || s2 == empty)
 return (NULL);
 
 while (*(s1 + size) != '\0')
