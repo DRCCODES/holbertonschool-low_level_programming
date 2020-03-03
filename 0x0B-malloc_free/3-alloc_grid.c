@@ -17,16 +17,16 @@ int i;
 int j;
 
 
-if (width < 1 || height < 1)
+if (width == 0 || height == 0 || width + height < 2)
 {
 return (NULL);
 }
 
-arr = malloc(sizeof(int *) * width);
+arr = malloc(sizeof(int *) * height);
 
-for (i = 0; i < width; i++)
+for (i = 0; i < height; i++)
 {
-arr[i] = malloc(sizeof(int) * height);
+arr[i] = malloc(sizeof(int) * width);
 	if (arr[i] == NULL)
 	{
 		for (j = 0; j <= i; j++)
