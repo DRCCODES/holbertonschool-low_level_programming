@@ -16,10 +16,13 @@ int i;
 int j;
 int size = 0;
 int size2 = 0;
-char *empty = "";
 
-if (s1 == empty || s2 == empty)
-return (NULL);
+
+if (s1 == NULL)
+	s1 = "";
+
+if (s2 == NULL)
+	s2 = "";
 
 while (*(s1 + size) != '\0')
 {
