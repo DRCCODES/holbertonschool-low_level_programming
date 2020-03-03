@@ -1,5 +1,5 @@
 #include "holberton.h"
-
+#include <stdlib.h>
 /**
   * create_array - creats an array
   * @size: size of array
