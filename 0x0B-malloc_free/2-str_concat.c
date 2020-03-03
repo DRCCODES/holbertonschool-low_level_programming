@@ -17,7 +17,7 @@ int j;
 int size = 0;
 int size2 = 0;
 
-if (s1 == 0 || s2 == 0)
+if (s1 == "" || s2 == "")
 return (NULL);
 
 while (*(s1 + size) != '\0')
