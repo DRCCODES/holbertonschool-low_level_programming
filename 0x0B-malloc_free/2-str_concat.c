@@ -34,7 +34,7 @@ while (*(s2 + size2) != '\0')
 size2++;
 }
 
-p = malloc((size + size2 + 1) *sizeof(char));
+p = malloc((size + size2 + 1) * sizeof(char));
 if (p == NULL)
 return (NULL);
 
