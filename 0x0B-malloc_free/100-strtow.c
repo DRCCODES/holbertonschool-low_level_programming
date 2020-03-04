@@ -25,7 +25,6 @@ int word_count(char *str)
 {
 int i = 0;
 int count = 0;
-char *k = str;
 
 while (str[i] != '\0')
 {
@@ -45,7 +44,6 @@ return (count);
  */
 char **strtow(char *str)
 {
-int size = 0;
 int c = word_count(str);
 int k;
 int i;
@@ -68,8 +66,7 @@ while (str[i] != ' ' && str[i] != '\0')
 i++;
 if (str[i] == '\0')
 {
-w[j] == NULL;
-return (w);
+	return (w);
 }
 w = malloc(sizeof(char) * word_len(str + i) + 1);
 if (w[j] == NULL)
