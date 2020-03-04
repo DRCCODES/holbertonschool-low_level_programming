@@ -1,8 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-
-
 /**
  * word_len - get len of word
  * @s: the str to find word len of
@@ -48,18 +46,15 @@ return (count);
 char **strtow(char *str)
 {
 int size = 0;
-int c;
+int c = word_count(str);
 int k;
 int i;
 int j;
 int x;
-int l;
-
 char **w;
-c = word_count(str);
+
 if (str == NULL || str[0] == '\0')
 return (NULL);
-
 if (c == 0)
 return (NULL);
 w = malloc(sizeof(char *) * (c + 1));
@@ -70,9 +65,7 @@ j = 0;
 while (str[i] != '\0')
 {
 while (str[i] != ' ' && str[i] != '\0')
-{
 i++;
-}
 if (str[i] == '\0')
 {
 w[j] == NULL;
@@ -86,12 +79,10 @@ free(w[k]);
 free(w);
 return (w);
 }
-l = word_len(str + i);
-for (x = 0; x < l && str[i] != '\0'; x++, i++)
+for (x = 0; x < word_len(str + i) && str[i] != '\0'; x++, i++)
 w[j][x] = str[i];
 w[j][x] = '\0';
 j++;
 }
 return (w);
-
 }
