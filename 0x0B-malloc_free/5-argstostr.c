@@ -13,23 +13,18 @@ char *argstostr(int ac, char **av)
 {
 	char *p;
 	char *final;
-	int i = 0;
-	int j = 0;
-	int size = 0;
+	int i;
+	int j;
+	int size;
 
 if (ac == 0 || av == NULL)
 return (NULL);
 
-while (i < ac)
+for (i = 0, size = 0; i < ac; i++)
 {
-	while (av[i][j]	!= '\0')
-	{	
-		size++;
-		j++;
-	}
+for (j = 0; *(*(av + i) + j) != '\0'; j++, size++)
+;
 size++;
-i++;
-
 }
 size++;
 p = malloc(sizeof(char) * size);
