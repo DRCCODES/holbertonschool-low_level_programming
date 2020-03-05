@@ -46,8 +46,8 @@ unsigned int size2;
 	if (s2 == NULL)
 	s2 = "";
 
-	size = _strlen_recursion(s1); 
-	size2 = _strlen_recursion(s2);	
+	size = _strlen_recursion(s1);
+	size2 = _strlen_recursion(s2);
 
 	if (n >= size2)
 	{
