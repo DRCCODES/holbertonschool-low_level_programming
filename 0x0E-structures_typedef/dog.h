@@ -1,5 +1,5 @@
-#ifndef HOLBERTON
-#define HOLBERTON
+#ifndef DOG_H
+#define DOG_H
 
 /**
  * struct dog - dogs attributes defined
@@ -7,14 +7,14 @@
  * @age: float age of dog
  * @owner: owner name str
  */
-
-
-typedef struct dog 
+typedef struct dog
 {
-
 	char *name;
 	float age;
 	char *owner;
-} dog_e;
+} dog_t;
+void print_dog(struct dog *d);
+void init_dog(struct dog *d, char *name, float age, char *owner);
+dog_t *new_dog(char *name, float age, char *owner);
 
 #endif
