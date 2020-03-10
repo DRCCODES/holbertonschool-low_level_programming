@@ -72,7 +72,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 
 	cpyn = _strcpy(name);
-	if (cpyo == NULL)
+	if (cpyn == NULL)
 	{
 		free(cpyo);
 		free(d);
