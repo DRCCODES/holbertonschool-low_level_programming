@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * _strlen_recursion - return lenght of str.
+ * _strlen - return lenght of str.
  * @s: str to be measured
  *
  * Return: lengths of string
