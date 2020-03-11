@@ -9,9 +9,9 @@
  * Return: Nothing.
  */
 
-void array_iterator(int *array, size_t size, void (*action)(int))
+void array_iterator(int *array, unsigned size, void (*action)(int))
 {
-	int i;
+	unsigned int i;
 
 	if (action == NULL || array == NULL || size <= 0)
 	return;
