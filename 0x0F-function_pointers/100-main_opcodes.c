@@ -19,10 +19,15 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(1);
 	}
-
+	
+	if (atoi(argv[1] < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
 	opn = atoi(argv[1]);
 
-	if (opn <0)
+	if (opn < 0)
 	{
 		printf("Error\n");
 		exit(2);
@@ -30,9 +35,9 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < opn; i++)
 	{
-		printf("%02hhx ",ptr[i]);
+		printf("%02hhx ", ptr[i]);
 	}
-	
+
 	printf("%02hhx\n", ptr[i]);
 	return (0);
 }
