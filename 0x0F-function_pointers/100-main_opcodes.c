@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 	opn = atoi(argv[1]);
 
 
-	for (i = 0; i < opn; i++)
+	for (i = 0; i < opn -1; i++)
 	{
 		printf("%02hhx ", ptr[i]);
 	}
