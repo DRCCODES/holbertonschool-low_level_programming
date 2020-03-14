@@ -9,20 +9,21 @@
  * @n: numbers
  * Return: N/A
  */
- 
+
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 va_list list;
 int t;
+unsigned int i;
 va_start(list, n);
-    
-for (int i=0; i < n; i++)
+
+for (i = 0; i < n; i++)
 {
 t = va_arg(list, int);
-printf("%d",t);
+printf("%d", t);
 if (i < n - 1)
 {
-printf("%s",separator);
+printf("%s", separator);
 }
 }
 va_end(list);
