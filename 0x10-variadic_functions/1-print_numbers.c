@@ -17,15 +17,15 @@ int t;
 unsigned int i;
 va_start(list, n);
 
-for (i = 0; i < n; i++)
-{
-t = va_arg(list, int);
-printf("%d", t);
-if (i < n - 1)
-{
-printf("%s", separator);
-}
-}
+	for (i = 0; i < n; i++)
+	{
+		t = va_arg(list, int);
+		printf("%d", t);
+		if (i < n - 1 && separator != NULL)
+		{
+		printf("%s", separator);
+		}
+	}
 printf("\n");
 va_end(list);
 }
