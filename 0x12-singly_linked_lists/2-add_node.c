@@ -11,7 +11,7 @@
  *
  */
 
-int _strlen(char *s)
+int _strlen(const char *s)
 {
 	if (*s != '\0')
 	{
@@ -42,7 +42,7 @@ list_t *add_node(list_t **head, const char *str)
 		return (0);
 
 	nline->str = strdup(str);
-	nline->len = strlen(str);
+	nline->len = _strlen(str);
 	nline->next = *head;
 	*head = nline;
 	return (*head);
