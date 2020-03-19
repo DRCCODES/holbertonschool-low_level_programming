@@ -33,7 +33,7 @@ return (0);
 
 list_t *add_node(list_t **head, const char *str)
 {
-unsigned int listnum = 0;
+unsigned int ln = 0;
 
 	list_t *nline;
 
