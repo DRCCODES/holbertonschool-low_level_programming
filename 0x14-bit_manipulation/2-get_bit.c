@@ -1,22 +1,6 @@
 #include <stdio.h>
 #include "holberton.h"
 
-
-/**
-  * binary_len - get length of binary version of num
-  * @n: the number
-  * @c: the count set to 1
-  * Return: c
-  */
-
-int binary_len(unsigned long int n, unsigned long int c)
-{
-	if (n > 1)
-	return (1 + binary_len(n >> 1, c));
-	return (c);
-}
-
-
 /**
  * get_bit - get value of bit at index
  * @n: the num to look at
@@ -28,9 +12,7 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	int bit;
 
-	unsigned  int len = binary_len(n, 1);
-
-	if (len < index)
+	if (sizeof(n) * 8 < index)
 	{
 	return (-1);
 	}
