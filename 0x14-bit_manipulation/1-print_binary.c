@@ -7,7 +7,7 @@
  * Return: N/A
  */
 
-void print_binary(unsigned int num)
+void print_binary(unsigned long int num)
 {
 	unsigned long  int mask = 32768;
 
