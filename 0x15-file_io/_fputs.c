@@ -4,8 +4,8 @@
 
 /**  fputs(string,fp) -- put string to stream */
 
-int fputs(const char *p, FILE *fp)
+int _fputs(const char *p, int fp)
 {
-	write (fp->fd, p, strlen (p));
+	write (1, p, strlen (p));
 	return(0);
 }
