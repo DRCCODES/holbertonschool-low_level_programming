@@ -1,5 +1,14 @@
 #include "holberton.h"
 
+/**
+ * read_textfile - reads txt file and prints to POSIX
+ *
+ * @filename: name of the file, taken a a str
+ * @letters: number or letters to print
+ *
+ * Return: num actuall number of lettters it cold read and print or 0 if failed
+ */
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
@@ -15,7 +24,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	fd = open(filename, O_RDONLY);
-	
+
 	if (fd == -1)
 		return (0);
 
@@ -26,9 +35,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	buf[num] = '\0';
 
-	write(STDOUT_FILENO,buf,num);
+	write(STDOUT_FILENO, buf, num);
 
 	close(fd);
 
-	return num;
+	return (num);
 }
