@@ -13,6 +13,14 @@ int _fputs(const char *p, int fp)
 	return (0);
 }
 
+/**
+ * append_text_to_file - appened content to end of file
+ * @filename: name of file
+ * @text_content: content to parse into file
+ * Return: 1 or  -1 if fails
+ */
+
+
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int fptr;
@@ -20,7 +28,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (filename == NULL)
 		return (-1);
 
-	fptr = open(filename,O_WRONLY | O_APPEND);
+	fptr = open(filename, O_WRONLY | O_APPEND);
 
 	if (fptr == -1)
 		return (-1);
