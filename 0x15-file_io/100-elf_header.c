@@ -1,4 +1,4 @@
-#include holberton.h
+#include "holberton.h"
 
 /**
  * main - display information of ELF file header
@@ -10,5 +10,8 @@
 
 int main(int argc, char *argv[])
 {
+	if (argc != 2)
+		dprintf(STDERR_FILENO, "%s is of no use ", argv[0]), exit(98);
+
 	exit(98);
 }
