@@ -7,7 +7,7 @@
   */
 int main(int argc, char *argv[])
 {
-	int fd1. fd2. target;
+	int fd1, fd2, target;
 	char buf[1024];
 
 	if (argc != 3)
