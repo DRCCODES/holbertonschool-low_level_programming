@@ -19,8 +19,8 @@ if (h == NULL)
 
 while (h != NULL)
 	{
-	nodes++;
 	h = h->next;
+	nodes++;
 	}
 return (nodes);
 }
@@ -64,9 +64,8 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	while (i != idx)
 	{
-	if (tmp == NULL)
-		return (NULL);
 	tmp = tmp->next;
+	i++;
 	}
 	tmp->prev->next = new;
 	new->prev = tmp->prev;
