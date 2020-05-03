@@ -68,9 +68,9 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	}
 	else
 	{
-		tmp = tmp->prev->next = NULL;
+		tmp->prev->next = NULL;
+
 		free(tmp);
-		tmp = NULL;
 	}
 	return (1);
 }
