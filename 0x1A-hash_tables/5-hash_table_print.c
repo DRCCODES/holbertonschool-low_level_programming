@@ -27,7 +27,7 @@ void hash_table_print(const hash_table_t *ht)
 		{
 		if (ns == 0)
 		{
-			printf("'%s': '%s', ", pn->key, pn->value);
+			printf("'%s': '%s'", pn->key, pn->value);
 			ns++;
 		}
 		else
